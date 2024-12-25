@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio | Rofia</title>
+</head>
+<body>
+    <header>
+        <div id="vanta-header"></div>
+        <div class="info-text">
+            <h1>Rofia Ai</h1>
+            <h3>Aspiring Software Engineer ^^</h3>
+            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+        </div>
+    </header>
+    <section id="about">
+        <div class="header">
+            <h1>About Me</h1>
+            <a href="#">Learn more</a>
+        </div>
+        <div class="card">
+            <img src="image.png">
+            <div class="info">
+                <h1> Hi! It's Rofia</h1>
+                <p>Second-year Computer Science student. passionate about AI, problem-solving, and software engineering.
+             Experienced in Arduino projects and C++.
+             with ongoing learning in JavaScript, SDL, and web development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="header">
+            <h1>Features</h1>
+            <a href="#">See More</a>
+        </div>
+        <div class="features-cards">
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-devices' ></i>
+                    <h1>Software projects</h1>
+                    <p>
+                        Explore some of my own Projects 
+                        //In the making !//
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bx-ghost'></i>
+                    <h1>Robotics Projects</h1>
+                    <p>
+                        Some of my experience with hardware.
+                        //In the making ! //
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-header",
+            backgroundColor: 0x363657, // Updated background color
+            color1: 0xffffff,         // White bird primary color
+            color2: 0xffffff,         // White bird secondary color
+            birdSize: 1.5,            // Adjust bird size
+            wingSpan: 20.0,           // Adjust wing span
+            speedLimit: 4.0,          // Adjust movement speed
+            separation: 50.0          // Adjust bird separation
+        });
+    </script>
+</body>
+</html>
+
+  
